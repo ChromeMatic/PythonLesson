@@ -1,3 +1,10 @@
+# Lesson 2
+# => looking at the random module
+import random
+
+index = random.randint(0, 5)
+print(index)
+
 # Lesson 3
 # control flow & conditional operators
 
