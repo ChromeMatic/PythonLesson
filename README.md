@@ -1,5 +1,5 @@
 # Python-Lessons
-# 100 days code, teaching myself.
+# 100 days of code, teaching myself Python
 
 ![maxresdefault](https://user-images.githubusercontent.com/61952310/219884394-f9f1422c-cc63-4a0a-b08e-944615334eb4.jpg)
 
