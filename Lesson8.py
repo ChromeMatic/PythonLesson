@@ -2,8 +2,7 @@
 
 def greet(_name):
     print(f"Hello comrade {_name}")
-    print("How are you doing")
-    print("How is the weather comrade.")
+    print(f"How are you doing comrade {_name}")
 
 
 name = input("Please enter your name: ")
