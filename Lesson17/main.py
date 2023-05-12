@@ -1,19 +1,21 @@
-class User:
-    def __init__(self, user_id, username):
-        self.id = user_id
-        self.username = username
-        self.follower = 0
-        self.following = 0
+from question_model import Question
+from quiz_brain import QuizBrain
+from data import question_data
 
-    def follow(self, user):
-        user.follower += 1
-        self.following += 1
+question_bank = []
 
+for question in question_data:
+    question_text = question["text"]
+    question_answer = question["answer"]
 
-user_1 = User("001", "ChromeMatic")
-user_2 = User("002", "Thugs")
+    question_obj = Question(question_text, question_answer)
+    question_bank.append(question_obj)
 
-user_1.follow(user_1)
+quiz = QuizBrain(question_bank)
 
-print(user_1.follower)
-print(user_2.following)
+while quiz.still_has_question():
+    quiz.next_question()
+
+print("You have completed the quiz.")
+print(f"Your final score was {quiz.score}/{quiz.question_number}")
+
